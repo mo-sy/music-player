@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section {
+  position: relative;
+  border-radius: 20px;
+  background-color: rgb(19, 24, 27);
+  box-shadow: inset 10px 10px 80px rgb(38, 56, 77);
+  max-width: 400px;
+  width: 100%;
+  height: 700px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+.container {
+  padding: 32px;
+  padding-bottom: 0;
+}
+
+.header i {
+  color: #eee;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singer__img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
+.singer__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.singer__info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.singer-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #eee;
+}
+
+.sub-text {
+  color: rgb(156, 156, 156);
+  font-size: 16px;
+}
+
+.singer__buttons {
+  margin-bottom: 40px;
+}
+
+.singer__buttons button {
+  width: 130px;
+  height: 46px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(10, 10, 10);
+}
+
+.buttons {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn-shuffle {
+  background: #000;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.btn-like {
+  color: #000;
+  background-color: #fff;
+}
+
+.like-count {
+  color: rgb(48, 48, 48);
+}
+
+.song {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.song-info {
+  display: flex;
+}
+
+.song-list-wrap {
+  height: 220px;
+  overflow: scroll;
+  margin-bottom: 30px;
+  -ms-overflow-style: none;
+}
+
+.song-list-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.song-cover {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin-right: 20px;
+}
+
+.song-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song-cover-playing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.song-cover-playing .playing-line span {
+  display: inline-block;
+  background-color: #fff;
+  width: 5px;
+  height: 100%;
+}
+
+.song-cover-playing .playing-line span:first-child {
+  animation: status-play 1s infinite ease-in-out;
+}
+
+.song-cover-playing .playing-line span:nth-child(2) {
+  animation: status-play 1s infinite ease-in-out;
+  animation-delay: 0.4s;
+}
+
+.song-cover-playing .playing-line span:nth-child(3) {
+  animation: status-play 1s infinite ease-in-out;
+  animation-delay: 0.6s;
+}
+
+.song-cover-playing .playing-line span:last-child {
+  animation: status-play 1s infinite ease-in-out;
+  animation-delay: 0.8s;
+}
+
+@keyframes status-play {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.playing-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song-info__singer {
+  color: rgb(163, 163, 163);
+}
+
+.song-info__song-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-more {
+  font-size: 18px;
+  color: rgb(219, 219, 219);
+}
+
+.play-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+  height: 65px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background-color: rgb(30, 70, 131);
+  box-shadow: 10px 10px 20px #000;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.play-bar .song-info {
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.play-bar .song-info__song-name {
+  font-size: 14px;
+}
+
+.play-bar .song-info__song-name,
+.play-bar__controls button {
+  color: #fff;
+}
+.play-bar__controls i {
+  font-size: 18px;
+}
+
+.player-screen .song-cover {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.player-screen .header {
+  margin-bottom: 20px;
+}
+
+.player-screen .header .btn-more {
+  margin-right: -5px;
+}
+
+.player-screen__song-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.player-screen__song-info .song-info__song-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.play-line {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.play-time {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.play-line-bar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: rgb(68, 68, 68);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.play-line--position {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  /* background-color: rgb(221, 43, 43); */
+  background-color: #fff;
+}
+
+.play-line--position::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  /* background-color: rgb(221, 43, 43); */
+  background-color: #fff;
+  right: 0px;
+  top: -5px;
+}
+
+.play-screen__control {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.btn-play-status {
+  background-color: rgb(30, 70, 131);
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.btn-prev,
+.btn-next {
+  font-size: 24px;
+  color: rgb(30, 70, 131);
+}
+
+.fa-play {
+  margin-right: -5px;
+}
+
+.play-screen__control .btn-shuffle {
+  background-color: transparent;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-repeat {
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+}
+
+@media (max-width: 720px) {
+  body {
+    flex-direction: column;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+}
