@@ -384,7 +384,7 @@ button {
 }
 
 @media (max-width: 720px) {
-  body {
+  .body-container {
     flex-direction: column;
   }
 
