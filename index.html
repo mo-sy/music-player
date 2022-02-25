@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>You Are Awesome!</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400,600,700&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
@@ -19,191 +16,279 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Section 1 Singer Info Screen -->
-    <section class="section singer-section">
-      <div class="container">
-        <header class="header">
-          <div class="header__col">
-            <a href="#none" class="btn-back">
-              <i class="fas fa-arrow-left"></i>
-            </a>
-          </div>
-          <div class="header__col">
-            <span class="search-icon"><i class="fas fa-search"></i></span>
-          </div>
-        </header>
-        <div class="singer">
-          <div class="singer__img">
-            <img src="./img/sawol.png" alt="" />
-          </div>
-          <div class="singer__info">
-            <h1 class="singer-name">김사월</h1>
-            <p class="sub-text">인디, 포크/어쿠스틱</p>
-          </div>
-          <div class="singer__buttons">
-            <div class="buttons">
-              <button class="btn-shuffle">Shuffle</button>
-              <button class="btn-like">
-                <i class="fas fa-heart"></i>
-                <span class="like-count">212971</span>
-              </button>
+    <div class="body-container">
+      <!-- Section 1 Singer Info Screen -->
+      <section class="section singer-section">
+        <div class="container">
+          <header class="header">
+            <div class="header__col">
+              <a href="#none" class="btn-back">
+                <i class="fas fa-arrow-left"></i>
+              </a>
+            </div>
+            <div class="header__col">
+              <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+          </header>
+          <div class="singer">
+            <div class="singer__img">
+              <img src="./img/sawol.png" alt="" />
+            </div>
+            <div class="singer__info">
+              <h1 class="singer-name">김사월</h1>
+              <p class="sub-text">인디, 포크/어쿠스틱</p>
+            </div>
+            <div class="singer__buttons">
+              <div class="buttons">
+                <button class="btn-shuffle">Shuffle</button>
+                <button class="btn-like">
+                  <i class="fas fa-heart"></i>
+                  <span class="like-count">212971</span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="song-list-wrap">
-          <ul class="songs">
-            <li class="song">
-              <div class="song-info">
-                <div class="song-cover">
-                  <img src="./img/1.jpeg" alt="" />
-                </div>
-                <div class="song-info__info">
-                  <div class="song-info__singer">김사월</div>
-                  <div class="song-info__song-name">접속</div>
-                </div>
-              </div>
-              <button class="btn-more">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="song">
-              <div class="song-info">
-                <div class="song-cover">
-                  <img src="./img/4.jpeg" alt="" />
-                </div>
-                <div class="song-info__info">
-                  <div class="song-info__singer">김사월</div>
-                  <div class="song-info__song-name">세상에게</div>
-                </div>
-              </div>
-              <button class="btn-more">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="song">
-              <div class="song-info">
-                <div class="song-cover">
-                  <div class="song-cover-playing">
-                    <div class="playing-line">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
+          <div class="song-list-wrap">
+            <ul class="songs">
+              <li class="song">
+                <div class="song-info">
+                  <div class="song-cover">
+                    <img src="./img/1.jpeg" alt="" />
                   </div>
-                  <img src="./img/4.jpeg" alt="" />
+                  <div class="song-info__info">
+                    <div class="song-info__singer">김사월</div>
+                    <div class="song-info__song-name">접속</div>
+                  </div>
                 </div>
-                <div class="song-info__info">
-                  <div class="song-info__singer">김사월</div>
-                  <div class="song-info__song-name">연인에게</div>
+                <button class="btn-more">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </li>
+              <li class="song">
+                <div class="song-info">
+                  <div class="song-cover">
+                    <img src="./img/4.jpeg" alt="" />
+                  </div>
+                  <div class="song-info__info">
+                    <div class="song-info__singer">김사월</div>
+                    <div class="song-info__song-name">세상에게</div>
+                  </div>
                 </div>
-              </div>
-              <button class="btn-more">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="song">
-              <div class="song-info">
-                <div class="song-cover">
-                  <img src="./img/3.jpeg" alt="" />
+                <button class="btn-more">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </li>
+              <li class="song">
+                <div class="song-info">
+                  <div class="song-cover">
+                    <div class="song-cover-playing">
+                      <div class="playing-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <img src="./img/4.jpeg" alt="" />
+                  </div>
+                  <div class="song-info__info">
+                    <div class="song-info__singer">김사월</div>
+                    <div class="song-info__song-name">연인에게</div>
+                  </div>
                 </div>
-                <div class="song-info__info">
-                  <div class="song-info__singer">김사월</div>
-                  <div class="song-info__song-name">지옥으로 가버려</div>
+                <button class="btn-more">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </li>
+              <li class="song">
+                <div class="song-info">
+                  <div class="song-cover">
+                    <img src="./img/3.jpeg" alt="" />
+                  </div>
+                  <div class="song-info__info">
+                    <div class="song-info__singer">김사월</div>
+                    <div class="song-info__song-name">지옥으로 가버려</div>
+                  </div>
                 </div>
-              </div>
-              <button class="btn-more">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-            <li class="song">
-              <div class="song-info">
-                <div class="song-cover">
-                  <img src="./img/1.jpeg" alt="" />
+                <button class="btn-more">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </li>
+              <li class="song">
+                <div class="song-info">
+                  <div class="song-cover">
+                    <img src="./img/1.jpeg" alt="" />
+                  </div>
+                  <div class="song-info__info">
+                    <div class="song-info__singer">김사월</div>
+                    <div class="song-info__song-name">젊은여자</div>
+                  </div>
                 </div>
-                <div class="song-info__info">
-                  <div class="song-info__singer">김사월</div>
-                  <div class="song-info__song-name">젊은여자</div>
-                </div>
-              </div>
-              <button class="btn-more">
-                <i class="fas fa-ellipsis-v"></i>
-              </button>
-            </li>
-          </ul>
+                <button class="btn-more">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="play-bar">
-        <div class="song-info">
-          <div class="song-info__singer">김사월</div>
-          <div class="song-info__song-name">연인에게</div>
+        <div class="play-bar">
+          <div class="song-info">
+            <div class="song-info__singer">김사월</div>
+            <div class="song-info__song-name">연인에게</div>
+          </div>
+          <div class="play-bar__controls">
+            <button class="prev">
+              <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="pause">
+              <i class="fas fa-pause"></i>
+            </button>
+            <button class="next">
+              <i class="fas fa-step-forward"></i>
+            </button>
+          </div>
         </div>
-        <div class="play-bar__controls">
-          <button class="prev">
+      </section>
+
+      <!-- Section 2 Player Screen  -->
+      <section class="section player-screen">
+        <div class="container">
+          <header class="header">
+            <div class="header__col">
+              <a href="#none" class="btn-back">
+                <i class="fas fa-arrow-left"></i>
+              </a>
+            </div>
+            <div class="header__col">
+              <button class="btn-more">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </div>
+          </header>
+          <div class="player-screen__cover">
+            <div class="song-cover">
+              <img src="./img/4.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="player-screen__song-info">
+            <div class="song-info__song-name">연인에게</div>
+            <div class="song-info__singer">김사월</div>
+          </div>
+        </div>
+        <!-- /container -->
+        <div class="play-line">
+          <div class="play-time">
+            <span class="play-time__now">1:56</span>
+            <span class="play-time__end">2:21</span>
+          </div>
+          <div class="play-line-bar">
+            <div class="play-line--position"></div>
+          </div>
+        </div>
+        <div class="play-screen__control">
+          <button class="btn-repeat">
+            <i class="fas fa-redo-alt"></i>
+          </button>
+          <button class="btn-prev">
             <i class="fas fa-step-backward"></i>
           </button>
-          <button class="pause">
-            <i class="fas fa-pause"></i>
+          <button class="btn-play-status">
+            <i class="fas fa-play"></i>
           </button>
-          <button class="next">
+          <button class="btn-next">
             <i class="fas fa-step-forward"></i>
           </button>
+          <button class="btn-shuffle">
+            <i class="fas fa-random"></i>
+          </button>
         </div>
-      </div>
-    </section>
-
-    <!-- Section 2 Player Screen  -->
-    <section class="section player-screen">
-      <div class="container">
-        <header class="header">
-          <div class="header__col">
-            <a href="#none" class="btn-back">
-              <i class="fas fa-arrow-left"></i>
-            </a>
-          </div>
-          <div class="header__col">
+      </section>
+    </div>
+    <!-- /body-container -->
+    <div class="test">
+      <h1>TEST</h1>
+      <div class="song-list-wrap">
+        <ul class="songs">
+          <li class="song">
+            <div class="song-info">
+              <div class="song-cover">
+                <img src="./img/1.jpeg" alt="" />
+              </div>
+              <div class="song-info__info">
+                <div class="song-info__singer">김사월</div>
+                <div class="song-info__song-name">접속</div>
+              </div>
+            </div>
             <button class="btn-more">
               <i class="fas fa-ellipsis-v"></i>
             </button>
-          </div>
-        </header>
-        <div class="player-screen__cover">
-          <div class="song-cover">
-            <img src="./img/4.jpeg" alt="" />
-          </div>
-        </div>
-        <div class="player-screen__song-info">
-          <div class="song-info__song-name">연인에게</div>
-          <div class="song-info__singer">김사월</div>
-        </div>
+          </li>
+          <li class="song">
+            <div class="song-info">
+              <div class="song-cover">
+                <img src="./img/4.jpeg" alt="" />
+              </div>
+              <div class="song-info__info">
+                <div class="song-info__singer">김사월</div>
+                <div class="song-info__song-name">세상에게</div>
+              </div>
+            </div>
+            <button class="btn-more">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="song">
+            <div class="song-info">
+              <div class="song-cover">
+                <div class="song-cover-playing">
+                  <div class="playing-line">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <img src="./img/4.jpeg" alt="" />
+              </div>
+              <div class="song-info__info">
+                <div class="song-info__singer">김사월</div>
+                <div class="song-info__song-name">연인에게</div>
+              </div>
+            </div>
+            <button class="btn-more">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="song">
+            <div class="song-info">
+              <div class="song-cover">
+                <img src="./img/3.jpeg" alt="" />
+              </div>
+              <div class="song-info__info">
+                <div class="song-info__singer">김사월</div>
+                <div class="song-info__song-name">지옥으로 가버려</div>
+              </div>
+            </div>
+            <button class="btn-more">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="song">
+            <div class="song-info">
+              <div class="song-cover">
+                <img src="./img/1.jpeg" alt="" />
+              </div>
+              <div class="song-info__info">
+                <div class="song-info__singer">김사월</div>
+                <div class="song-info__song-name">젊은여자</div>
+              </div>
+            </div>
+            <button class="btn-more">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
       </div>
-      <!-- /container -->
-      <div class="play-line">
-        <div class="play-time">
-          <span class="play-time__now">1:56</span>
-          <span class="play-time__end">2:21</span>
-        </div>
-        <div class="play-line-bar">
-          <div class="play-line--position"></div>
-        </div>
-      </div>
-      <div class="play-screen__control">
-        <button class="btn-repeat">
-          <i class="fas fa-redo-alt"></i>
-        </button>
-        <button class="btn-prev">
-          <i class="fas fa-step-backward"></i>
-        </button>
-        <button class="btn-play-status">
-          <i class="fas fa-play"></i>
-        </button>
-        <button class="btn-next">
-          <i class="fas fa-step-forward"></i>
-        </button>
-        <button class="btn-shuffle">
-          <i class="fas fa-random"></i>
-        </button>
-      </div>
-    </section>
+    </div>
   </body>
 </html>
